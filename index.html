@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="shortcut icon" href="imagens/G.ico" type="image/x-icon">
+  <title>Home | Galamarra</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="w3-content" style="max-width:1200px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+      <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+      <h3 class="w3-wide"><b>Galamarra</b></h3>
+    </div>
+    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+      <a href="cadastro.html" class="w3-bar-item w3-button">Realizar Cadastro</a>
+
+      <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+        Categorias <i class="fa fa-caret-down"></i>
+      </a>
+      <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
+            class="fa fa-caret-right w3-margin-right"></i>Promoção</a>
+        <a href="#" class="w3-bar-item w3-button">Disponíveis para troca</a>
+        <a href="#" class="w3-bar-item w3-button">Pouco usados</a>
+        <a href="#" class="w3-bar-item w3-button">Disponíveis para empréstimo</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <div class="w3-bar-item w3-padding-24 w3-wide">Galamarra</div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
+        class="fa fa-bars"></i></a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <div class="w3-main" style="margin-left:250px">
+
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <header class="w3-container w3-xlarge">
+      <p class="w3-right">
+        <i class="fa fa-shopping-cart w3-margin-right"></i>
+        <i class="fa fa-search"></i>
+      </p>
+    </header>
+
+    <!-- estante livros -->
+    <div class="w3-display-container w3-container">
+      <img src="imagens/estante-livros.jpg" alt="Jeans" style="width:100%">
+      <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+        <h1 class="w3-jumbo w3-hide-small">Ofertas fim de ano</h1>
+        <h1 class="w3-hide-small">COLEÇÃO 2021</h1>
+        <p><a class="w3-button w3-black w3-padding-large w3-large">CONFIRA AGORA</a></p>
+      </div>
+    </div>
+    <br>
+
+    <!-- teorema -->
+    <div class="w3-row w3-grayscale">
+      <div class="w3-col l3 s6">
+        <div class="livro w3-container">
+          <div class="w3-display-container">
+            <img src="imagens/teorema.jpg" style="border-radius: 12px; width:100%">
+            <span class="w3-tag w3-display-topleft" style="border-radius: 8px;">Novo</span>
+          </div>
+          <p>O Teorema de Katherine<br><b>R$19,99</b></p><br>
+        </div>
+
+        <!-- garota do lado -->
+        <div class=" livro w3-container">
+          <img src="imagens/a-garota-do-lago.jpg" style="border-radius: 12px; width:100%">
+          <p>A Garota do Lago<br><b>R$19,99</b></p>
+        </div>
+      </div>
+
+      <!-- harry potter -->
+      <div class="w3-col l3 s6">
+        <div class="livro w3-container">
+          <img src="imagens/harry.jpg" style="border-radius: 12px; width:100%">
+          <p>Harry Potter e a Pedra Filosofal<br><b>R$24,99</b></p>
+        </div>
+        <!-- textos crueis-->
+        <div class="livro w3-container">
+          <img src="imagens/textos-crueis.jpg" style="border-radius: 12px; width:100%">
+          <p>Textos Cruéis Demais Para Serem Lidos Rapidamente<br><b>R$20,50</b></p>
+        </div>
+      </div>
+
+      <!-- orgulho e preconceito -->
+      <div class="w3-col l3 s6">
+        <div class="livro w3-container">
+          <img src="imagens/orgulho-e-preconceito.jpg" style="border-radius: 12px; width:100%">
+          <p>Orgulho e Preconceito<br><b>R$20,50</b></p><br>
+        </div>
+        
+        <!-- sherlock -->
+        <div class="livro w3-container">
+          <div class="w3-display-container">
+            <img src="imagens/sherlock-holmes.jpg" style="border-radius: 12px; width:100%">
+            <span class="w3-tag w3-display-topleft" style="border-radius: 8px;">Novo</span>
+          </div>
+          <p>As Aventuras de Sherlock Holmes<br><b>R$14,99</b></p>
+        </div>
+      </div>
+
+      <!-- alasca-->
+      <div class="w3-col l3 s6">
+        <div class="livro w3-container">
+          <img src="imagens/quem-é-vc-alasca.jpg" style="border-radius: 12px; width:100%">
+          <p>Quem É Você, Alasca?<br><b>R$14,99</b></p><br>
+        </div>
+
+        <!-- tudo -->
+        <div class="livro w3-container">
+          <img src="imagens/tudo-e-todas-as-coisas.jpg" style="border-radius: 12px; width:100%">
+          <p>Tudo e Todas as Coisas<br><b>R$24,99</b></p>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer class="w3-padding-0 w3-light-grey w3-small w3-center" id="footer">
+      <div class="w3-row-padding">
+        <div class="w3-col s4 w3-justify">
+          <h4>Loja</h4>
+          <p><i class="fa fa-fw fa-map-marker"></i> Rodovia LMG 818, KM 06, Campus Universitário, Florestal - MG, 35690-000</p> 
+          <br> 
+          <p><i class="fa fa-fw fa-phone"></i> (31) 9 4002-8922</p>
+          <br> 
+          <p><i class="fa fa-fw fa-envelope"></i> galamarra_contato@gmail.com</p>
+          <h4>Nós aceitamos</h4>
+          <p><i class="fa fa-fw fa-cc-amex"></i> Pix</p>
+          <br>
+          <p><i class="fa fa-fw fa-credit-card"></i> Cartão de Crédito</p>
+          <br>
+          <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+          <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+          <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+          <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+          <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+        </div>
+      </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24">&copy; Copyright Sebo Galamarra - 2021<target="_blank"
+        class="w3-hover-opacity"></a></div>
+    <p class="copyright"></p>
+  </div>
+
+  <script>
+    function myAccFunc() {
+      var x = document.getElementById("demoAcc");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    document.getElementById("myBtn").click();
+
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
